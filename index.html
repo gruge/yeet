@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html"; charset=utf-8" />
+	<title>Form</title>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<script>
+     function ValidateEmail(inputText){  
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+       if(inputText.match(mailformat)) {  
+		alert("Вы ввели правильную почту!");
+         return true;  
+       }  
+       else {  
+           alert("Вы ввели не правильную почту!");  
+           return false;  
+       }  
+    } 
+	 function ValidateNumber(inputText){  
+		var number = /^[0-9]{0,10}$/;
+		if (inputText.match(number)) {
+		alert("Вы ввели правильный номер телефона!");
+		return true;
+		}
+		else { 
+		alert("Вы ввели не правильный номер телефона!");
+		return false;
+		}
+    } 
+</script>
+</head>
+	<body>
+	<div class="container">
+	<!--// Начало всего сайта //-->
+	<div class="form-group col" id="personaldata">
+	<h1 class="text-center">Введите личные данные</h1>
+    <form action="/action_page.php">
+		<div class="form-group">
+		<label for="name">Имя:</label>
+		  <input type="text" class="form-control" placeholder="Obama" id="name" name="name">
+		</div>
+		<div class="form-group">
+		<label for="surname">Фамилия:</label>
+		  <input type="text" class="form-control" placeholder="Hussein" id="surname" name="surname">
+		</div>
+		<div class="form-group">
+		<label for="code">Персональный код:</label>
+			<input type="text" maxlength="11" placeholder="123456789101" class="form-control" id="code" name="code">
+		</div>
+		<div class="form-group">
+			<label for="start-date">Дата Рождения:</label>
+			<input type="date" id="start-date" name="start_date" />
+		</div>
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Пол</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Мужской
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Женский
+          </label>
+        </div>
+      </div>
+    </div>
+    </form>
+	</div>
+	<h1 class="text-center col-12">Выбор и получение товара</h1>
+	<h2 class="text-center col-12">Товары</h2>
+	<div class="accordion" id="accordionExample">
+	  <div class="card">
+		<div class="card-header" id="headingOne">
+		  <h2 class="mb-0">
+			<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			  LOGITECH G923 Racing Wheel ja Pedals PS4 ja PC - USB #1
+			</button>
+		  </h2>
+		</div>
+		<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+		  <img src="wheel.jpg" style="width:200px"class="card-img-top" alt="driving wheel">
+		  <div class="card-body">
+		  	<p class="text-center" style="font-size: 20px">Описание товара</p>
+			Встречайте новое поколение гоночных рулей. Отмеченный наградами дизайн Logitech G 
+			был переработан, чтобы соответствовать физике вашей игры, обеспечивая беспрецедентный реализм. 
+			Почувствуйте, как качаются поршни, хрустит гравий, и каждый сдвиг, занос и поворот шпильки, как никогда раньше.</br>
+			Название аксессуара: G923 Racing Wheel and Pedals</br>
+			Вес аксессуара: 14 кг</br>
+			Штук в упаковке: 1</br>
+			Гарантия производителя: 2 года</br>
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="card-header" id="headingTwo">
+		  <h2 class="mb-0">
+			<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			  LG UltraGear 27GN950-B - 27'' Nano-IPS 3840x2160 144Hz #2
+			</button>
+		  </h2>
+		</div>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		<img src="monitor.jpg" style="width:200px"class="card-img-top" alt="Computer monitor">
+		  <div class="card-body">
+		  <p class="text-center" style="font-size: 20px">Описание товара</p>
+			Этот аппаратно откалиброванный монитор с разрешением 4K покрывает 98% цветовой гаммы DCI-P3 
+			для истинной точности цветопередачи, поэтому вы 
+			можете управлять веб-дизайном, мультимедиа, видео и приключениями ночью даже 
+			на самых сложных полях сражений.</br>
+			Размер экрана: 27''</br>
+			Разрешение: 3840x2160 144 Гц</br>
+			Время отклика: 1 мс</br>
+			Яркость: 400 нит</br>
+			Включает: Displayport, HDMI, USB-кабель, питание</br>
+			Гарантия производителя: 1 год (для физических лиц 2 года)</br>
+		  </div>
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="card-header" id="headingThree">
+		  <h2 class="mb-0">
+			<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			  Roccat Elo Air - WRL / 7.1 / RGB  #3
+			</button>
+		  </h2>
+		</div>
+		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		  <img src="headphones.jpg" style="width:200px"class="card-img-top" alt="Headphones">
+		  <div class="card-body">
+		  <p class="text-center" style="font-size: 20px">Описание товара</p>
+			Игровая гарнитура ROCCAT® Elo 7.1 Air Surround RGB предлагает новейшие беспроводные технологии. 
+			Оцените виртуальный объемный звук на 360 ° с точно настроенными 50-мм динамиками. 
+			Stellar Wireless предлагает невероятно надежную связь, 
+			а также удобство и свободу беспроводной связи.
+			Разъем клапана Type-C делает загрузку легкой и удобной.</br>
+			Звук: 7.1 объемный звук</br>
+			Тип микрофона: Съемный микрофон</br>
+			Микрофон: С шумоподавлением</br>
+			Совместимые операционные системы: Windows 10/8/7</br>
+			Источник питания: аккумулятор</br>
+			Срок службы батареи: 24 часа</br>
+			Цвет: Черный цвет</br>
+			Вес: 345 г</br>
+			Гарантия производителя: 2 года</br>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</div>
+	<div class="form-group row" id="tovar">
+	<h1 class="text-center col-12">Получение товара</h1>
+	<div class="col-6">
+	<label for="choosetovar">Выберите товар:</label>
+	<select class="custom-select" id="choosetovar">
+	<option value="1">Руль</option>
+	<option value="2">Монитор</option>
+	<option value="3">Наушники</option>
+	</select>
+	</div>
+	<div class="col-6">
+	<label for="choosetovar">Выберите способ доставки:</label>
+	<select class="custom-select" id="choosetovar">
+	<option value="1">Прислать по почте</option>
+	<option value="2">Заберу из почтового автомата</option>
+	<option value="3">Заберу сам из представительства</option>
+	</select>
+	</div>
+	<div class="col-8">
+	<label for="choosetovar">Выберите представительство для доставки:</label>
+	<select class="custom-select" id="choosetovar">
+	<option value="1">Omniva</option>
+	<option value="2">dpd</option>
+	<option value="3">Itella</option>
+	</select>
+	</div>
+	<div class="form-group col-2">
+    <label for="address">Адрес:</label>
+    <input type="text" class="form-control" id="address" placeholder="Linnamäe tee 29-21">
+	</div>
+	<div class="form-group col-2">
+      <label for="index">Почтовый индекс:</label>
+      <input type="text" maxlength="5" class="form-control" placeholder="12345" id="index">
+    </div>
+	</div>
+	<div class="form-group col" id="timepicker">
+		<div class="form-group">
+			<label for="start-date">Выбор даты начала периода получения товара</label>
+			<input type="date" id="start-date" name="start_date" />
+		</div>
+		<div class="form-group">
+			 <label for="default-picker">Выбор времени начала периода получения товара</label>
+			<input type="time" id="default-picker" class="form-control" placeholder="Select time">
+		</div>
+		
+		<div class="form-group">
+			<label for="start-date">Выбор даты конца периода получения товара</label>
+			<input type="date" id="start-date" name="start_date" />
+		</div>
+		<div class="form-group">
+			 <label for="default-picker">Выбор времени конца периода получения товара</label>
+			<input type="time" id="default-picker" class="form-control" placeholder="Select time">
+		</div>
+	</div>
+	<h1 class="text-center col-12">Способ связи</h1>
+	<div class="form-group" id="contacts">
+	<label for="phone">Введите эл.почту:</label>
+	<input type="text" name="email" id="emailId" value="" >
+	<button onclick = "return ValidateEmail(document.getElementById('emailId').value)">Проверить</button>
+		   <label for="phone">Введите номер телефона:</label>
+			  <input type="tel" id="phone" maxlength="9" name="phone" placeholder="5555 6666" pattern="[0-9]{4} [0-9]{4}" required>
+			  <button onclick = "return ValidateNumber(document.getElementById('phone').value)">Проверить</button>
+		<div class="custom-control custom-checkbox my-1 mr-sm-2">
+			<input type="checkbox" class="custom-control-input" id="customControlInline">
+			<label class="custom-control-label" for="customControlInline">Я согласен с правилами предоставления услуг</label>
+		</div>
+  </div>
+	</div>
+	<!--// Конец всего сайта //-->
+	</div>
+	<script language="javascript" src="js/jquery-3.5.1.slim.min.js" ></script>
+	<script language="javascript" src="js/popper.min.js" ></script>
+	<script language="javascript" src="js/bootstrap.min.js" ></script>
+	</body>
+</html>
