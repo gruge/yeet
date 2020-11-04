@@ -8,22 +8,22 @@
      function ValidateEmail(inputText){  
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
        if(inputText.match(mailformat)) {  
-		alert("Вы ввели правильную почту!");
+		alert("Правильный ввод");
          return true;  
        }  
        else {  
-           alert("Вы ввели не правильную почту!");  
+           alert("Неправильный ввод");  
            return false;  
        }  
     } 
 	 function ValidateNumber(inputText){  
 		var number = /^[0-9]{0,10}$/;
 		if (inputText.match(number)) {
-		alert("Вы ввели правильный номер телефона!");
+		alert("Правильный ввод");
 		return true;
 		}
 		else { 
-		alert("Вы ввели не правильный номер телефона!");
+		alert("Неправильный ввод");
 		return false;
 		}
     } 
@@ -37,11 +37,11 @@
     <form action="/action_page.php">
 		<div class="form-group">
 		<label for="name">Имя:</label>
-		  <input type="text" class="form-control" placeholder="Obama" id="name" name="name">
+		  <input type="text" class="form-control" placeholder="Имя" id="name" name="name">
 		</div>
 		<div class="form-group">
 		<label for="surname">Фамилия:</label>
-		  <input type="text" class="form-control" placeholder="Hussein" id="surname" name="surname">
+		  <input type="text" class="form-control" placeholder="Фамилия" id="surname" name="surname">
 		</div>
 		<div class="form-group">
 		<label for="code">Персональный код:</label>
@@ -85,13 +85,8 @@
 		  <img src="wheel.jpg" style="width:200px"class="card-img-top" alt="driving wheel">
 		  <div class="card-body">
 		  	<p class="text-center" style="font-size: 20px">Описание товара</p>
-			Встречайте новое поколение гоночных рулей. Отмеченный наградами дизайн Logitech G 
-			был переработан, чтобы соответствовать физике вашей игры, обеспечивая беспрецедентный реализм. 
-			Почувствуйте, как качаются поршни, хрустит гравий, и каждый сдвиг, занос и поворот шпильки, как никогда раньше.</br>
-			Название аксессуара: G923 Racing Wheel and Pedals</br>
-			Вес аксессуара: 14 кг</br>
-			Штук в упаковке: 1</br>
-			Гарантия производителя: 2 года</br>
+			описане
+		 </br>
 		</div>
 	  </div>
 	  <div class="card">
@@ -105,17 +100,7 @@
 		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 		<img src="monitor.jpg" style="width:200px"class="card-img-top" alt="Computer monitor">
 		  <div class="card-body">
-		  <p class="text-center" style="font-size: 20px">Описание товара</p>
-			Этот аппаратно откалиброванный монитор с разрешением 4K покрывает 98% цветовой гаммы DCI-P3 
-			для истинной точности цветопередачи, поэтому вы 
-			можете управлять веб-дизайном, мультимедиа, видео и приключениями ночью даже 
-			на самых сложных полях сражений.</br>
-			Размер экрана: 27''</br>
-			Разрешение: 3840x2160 144 Гц</br>
-			Время отклика: 1 мс</br>
-			Яркость: 400 нит</br>
-			Включает: Displayport, HDMI, USB-кабель, питание</br>
-			Гарантия производителя: 1 год (для физических лиц 2 года)</br>
+		  <p class="text-center" style="font-size: 20px">Описание товара</p>			
 		  </div>
 		</div>
 	  </div>
@@ -131,20 +116,6 @@
 		  <img src="headphones.jpg" style="width:200px"class="card-img-top" alt="Headphones">
 		  <div class="card-body">
 		  <p class="text-center" style="font-size: 20px">Описание товара</p>
-			Игровая гарнитура ROCCAT® Elo 7.1 Air Surround RGB предлагает новейшие беспроводные технологии. 
-			Оцените виртуальный объемный звук на 360 ° с точно настроенными 50-мм динамиками. 
-			Stellar Wireless предлагает невероятно надежную связь, 
-			а также удобство и свободу беспроводной связи.
-			Разъем клапана Type-C делает загрузку легкой и удобной.</br>
-			Звук: 7.1 объемный звук</br>
-			Тип микрофона: Съемный микрофон</br>
-			Микрофон: С шумоподавлением</br>
-			Совместимые операционные системы: Windows 10/8/7</br>
-			Источник питания: аккумулятор</br>
-			Срок службы батареи: 24 часа</br>
-			Цвет: Черный цвет</br>
-			Вес: 345 г</br>
-			Гарантия производителя: 2 года</br>
 		  </div>
 		</div>
 	  </div>
@@ -164,8 +135,8 @@
 	<label for="choosetovar">Выберите способ доставки:</label>
 	<select class="custom-select" id="choosetovar">
 	<option value="1">Прислать по почте</option>
-	<option value="2">Заберу из почтового автомата</option>
-	<option value="3">Заберу сам из представительства</option>
+	<option value="2">забрать из почтового автомата</option>
+	<option value="3">Забрать самому из представительства</option>
 	</select>
 	</div>
 	<div class="col-8">
